@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        var drofo = ["anel invisibilidade", "botas magicas", "botas magicas", "pocao sono", "pocao inocencia", "pocao inocencia"];
+        var topper = ["capa invisibilidade", "pedra do despertar", "varinha das varinhas", "pocao da inocencia", "pocao da mentira", "pocao da mentira"];
+        //document.write(topper);
+
+
+        //Ações do topper 
+        topper.pop(); //consumiu uma pocao da mentira
+        topper.splice(1, 1); //perdeu sua pedra
+        topper.push("botas mágicas"); //ganhou botas magicas do drofo
+        drofo.splice(1, 1); //drofo fica com menos uma bota 
+        topper.push("escudo magico"); //achou um escudo magico 
+        topper.push("espada magica");  //achou uma espada magica
+
+        alert(topper);
+        alert(drofo)
+
+        //Ações do drofo
+        drofo.push("Bota magina"); //Ganhou uma bota magina
+        drofo.splice(3, 3); //Usou sua pocao do sono
+        topper.splice(2, 2); //usa pocao de inocencia nao achei nehuma anti inteligencia
+        drofo.push("ovo de dragão"); //acha ovo de dragão
+        drofo.push("coxinha"); //acha coxinha
+
+        document.write("INVENTARIO DO TOPPER: " + topper + "<br><br>"); //exibe inventario topper
+      
+        document.write("INVENTARIO DO DROFO: " + drofo); //exibe inventario drofo
+
+
+    </script>
+  
+  <title>Exercicio 3</title>
+</head>
+<body>
+    
+</body>
+</html>
